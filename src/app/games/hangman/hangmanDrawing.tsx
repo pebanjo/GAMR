@@ -35,7 +35,6 @@ const right_arm = (
       top: "100px",
       right: "-90px",
       rotate: "-30deg",
-      transformOrigin: "leftBottom",
     }}
   />
 );
@@ -50,7 +49,6 @@ const left_arm = (
       top: "100px",
       right: "0px",
       rotate: "30deg",
-      transformOrigin: "rightBottom",
     }}
   />
 );
@@ -62,10 +60,10 @@ const left_leg = (
       height: "10px",
       background: "black",
       position: "absolute",
-      top: "212px",
+      top: "190px",
       right: "0px",
-      rotate: "-30deg",
-      transformOrigin: "rightBottom",
+      rotate: "-60deg",
+      transformOrigin: "right bottom",
     }}
   />
 );
@@ -77,10 +75,10 @@ const right_leg = (
       height: "10px",
       background: "black",
       position: "absolute",
-      top: "212px",
+      top: "190px",
       right: "-90px",
-      rotate: "-150deg",
-      transformOrigin: "leftBottom",
+      rotate: "60deg",
+      transformOrigin: "left bottom",
     }}
   />
 );
