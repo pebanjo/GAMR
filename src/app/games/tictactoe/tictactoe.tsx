@@ -8,19 +8,6 @@ type BoardArray = Array<Array<string | null>>;
 const pastBoardStates: (BoardArray | null)[] = [];
 const futureboardStates: (BoardArray | null)[] = [];
 
-// const makeComputerMove = (board: BoardArray): [number, number] => {
-//   const emptyCells: [number, number][] = [];
-//   board.forEach((row, rowIndex) => {
-//     row.forEach((cell, cellIndex) => {
-//       if (!cell) {
-//         emptyCells.push([rowIndex, cellIndex]);
-//       }
-//     });
-//   });
-//   const randomIndex = Math.floor(Math.random() * emptyCells.length);
-//   return emptyCells[randomIndex];
-// };
-
 const checkWinner = (board: BoardArray): string | null => {
   const lines = [
     //rader
@@ -128,26 +115,6 @@ const Tictactoe = () => {
     pastBoardStates.push(board);
     return futureboardStates.pop();
   };
-
-  //   const bestMove = (board: BoardArray): [number, number] => {
-  //   let bestScore = -Infinity;
-  //   let move: [number, number] = [0, 0];
-  //   for (let i = 0; i < 3; i++) {
-  //     for (let j = 0; j < 3; j++) {
-  //       //er plassen ledig?
-  //       if (board[i][j] === null) {
-  //         board[i][j] == "O";
-  //         let score = minimax(board, 0, true);
-  //         board[i][j] = null;
-  //         if (score > bestScore) {
-  //           bestScore = score;
-  //           move = [i, j];
-  //         }
-  //       }
-  //     }
-  //   }
-  //   return move;
-  //   };
 
   const makeComputerMove = (board: BoardArray): [number, number] => {
     let bestVal = -Infinity;

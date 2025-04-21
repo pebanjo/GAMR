@@ -7,6 +7,8 @@
     align-items: center;
     transform: scale(0.47);   
     transform-origin: top;   
+    padding-top: 20px;
+    max-height: 530px;
 }
 
 .win-loose{
