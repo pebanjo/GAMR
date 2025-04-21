@@ -47,11 +47,17 @@ export default function hangman() {
     <>
       <div className="hangman-container">
         <div className="hangman">
-          <div className="win-loose">
-            {win && "Winner!"}
-            {fail && "You Lost!"}
-          </div>
-          <h1>{wordToGuess}</h1>
+          {(win && (
+            <h1 className="font-extrabold text-4xl text-orange-600 text-center mt-4 tracking-wider">
+              You Won,The Word Was Indeed {wordToGuess}{" "}
+            </h1>
+          )) ||
+            (fail && (
+              <h1 className="font-extrabold text-4xl text-orange-600 text-center mt-4 tracking-wider">
+                You Lost, The Correct Word Was {wordToGuess}{" "}
+              </h1>
+            ))}
+
           <HangmanDrawing
             numberOfGuesses={incorrectLetters.length}
           ></HangmanDrawing>
