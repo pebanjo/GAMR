@@ -64,6 +64,7 @@ export default function hangman() {
           <HangmanWord
             guessedLetters={guessedLetters}
             wordToGuess={wordToGuess}
+            reveal={fail}
           ></HangmanWord>
           <div
             style={{
