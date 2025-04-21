@@ -5,7 +5,10 @@
     gap: 2rem;
     margin:0 auto;
     align-items: center;
-    }
+    transform: scale(0.47);   
+    transform-origin: top;   
+}
+
 .win-loose{
     font-size: 2rem;
     text-align: center;

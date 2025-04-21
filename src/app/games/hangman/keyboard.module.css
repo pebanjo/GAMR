@@ -1,0 +1,17 @@
+.button{
+    width: 100%;
+    border: 1px solid #bb4b00;
+    background: #f2a84d;
+    font-weight: 550;
+    aspect-ratio: 1/1;
+    font-size: "2.5rem";
+}
+.button:hover:not(:disabled){
+    background:#ff9147;;
+}
+.button.active{
+background-color: #b25f28
+}
+button.inactive{
+    opacity: .3;
+}
