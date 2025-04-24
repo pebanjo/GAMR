@@ -1,0 +1,48 @@
+.playArea {
+    width: 585px;
+    height: 440px;
+    margin: 0;         /* senter canvas horisontalt */
+    background-color: #006400;
+    border: 3px solid #042a1c;
+}
+
+#fruit {
+	display: none;
+}
+
+.game-container {
+    padding-top: 50px;
+    width: 800px;
+    margin: 0 auto;         /* senter beholderen i vinduet */
+    position: relative;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      
+}
+
+.gameOver {
+    position: relative;
+	top: 43.2%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #042a1c;
+	font-size: 50px;
+    font-weight: bold;
+}
+.playButton {
+    display: block;          /* slik at margin auto fungerer */
+    margin: 20px auto 0;     /* plasser under canvas og senter */
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+
+.scoreBox {
+    position: static;     /* følger flow i containeren */
+    margin: 20px auto 0;  /* 20px avstand over, sentrert */
+    right: auto;
+    top: auto;
+  }
+  
+  
