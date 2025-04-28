@@ -11,14 +11,14 @@
 }
 
 .game-container {
-    padding-top: 50px;
     width: 800px;
-    margin: 0 auto;         /* senter beholderen i vinduet */
-    position: relative;  
+    position: absolute;
+    top: 350px; /* Juster denne verdien for å flytte containeren lenger ned */
+    left: 50%; /* Plasserer containeren midt horisontalt */
+    transform: translateX(-50%); /* Justerer for å sørge for at det er perfekt sentrert */
     display: flex;
     flex-direction: column;
     align-items: center;
-      
 }
 
 .gameOver {

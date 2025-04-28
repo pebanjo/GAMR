@@ -102,6 +102,9 @@ export default function Snake() {
   }
 
   function changeDirection(e: KeyboardEvent) {
+    if (["ArrowLeft", "ArrowUp", "ArrowRight", "ArrowDown"].includes(e.key)) {
+      e.preventDefault();
+    }
     switch (e.key) {
       case "ArrowLeft":
         setDirection([-1, 0]);
