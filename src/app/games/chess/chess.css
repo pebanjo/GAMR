@@ -1,0 +1,83 @@
+.chessgame .chessboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .chess_board_row {
+    display: flex;
+    gap: 0px;
+  }
+  
+  .chesscell {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    background-color: #f2a84d;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    transition: background-color 0.2s ease;
+    margin: 0px;
+    color:#ffee8c ;
+  }
+.light{
+        background-color: #f2a143;
+
+  }
+
+.dark{
+        background-color: #db8132;
+
+  }
+  .chesscell:hover {
+    background-color: #db8132;
+  }
+
+  .chessreset{
+    min-width: 200px;
+    border-radius:2px;
+    background-color: rgba(227, 155, 66, 0.798);
+    color: #ffee8c ;
+  }
+
+  .chesswinnerbox{
+    min-width: 200px;
+    border-radius: 2px;
+    background-color: azure;
+  }
+
+  .chessp{
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 30px;
+  }
+
+  .chessprev{
+    min-width: 200px;
+    border-radius:2px;
+    background-color: rgba(227, 155, 66, 0.798);
+    color:#ffee8c ;
+    padding: 1px;
+    margin: 1px;
+  }
+  .chessnext{
+    min-width: 200px;
+    border-radius:2px;
+    background-color: rgba(227, 155, 66, 0.798);
+    color:#ffee8c ;
+    padding: 1px;
+    margin: 1px;
+  }
+
+  .chessprev:hover {
+    background-color: #db8132;
+  }
+  .chessnext:hover {
+    background-color: #db8132;
+  }
+  .chessreset:hover {
+    background-color: #db8132;
+  }
